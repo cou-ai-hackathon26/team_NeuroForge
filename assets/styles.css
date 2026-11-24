@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --font-bangla: 'Hind Siliguri', sans-serif;
+    --rose-surface: #fff1f2;
+    --amber-surface: #fef3c7;
+    --ink-primary: #4c2732;
+    --ink-secondary: #593b43;
+    --ink-muted: #76545b;
+    --border-soft: #f3d5dc;
+    --accent-rose: #be123c;
+    --accent-rose-hover: #9f1239;
+}
+
+html,
+body,
+[class*="st-"],
+button,
+input,
+textarea,
+select,
+label {
+    font-family: var(--font-bangla) !important;
+}
+
+.block-container {
+    max-width: 900px;
+    padding-top: 1.4rem;
+    padding-bottom: 3rem;
+}
+
+.hero {
+    background: linear-gradient(
+        120deg,
+        var(--rose-surface) 0%,
+        var(--amber-surface) 100%
+    );
+    border: 1px solid var(--border-soft);
+    padding: 1.7rem 1.6rem;
+    border-radius: 0 0 24px 24px;
+    margin-bottom: 1rem;
+    box-shadow: 0 6px 20px rgba(99, 55, 68, 0.06);
+}
+
+.hero-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.hero-flower {
+    font-size: 2.8rem;
+    line-height: 1.1;
+}
+
+.hero-title {
+    color: var(--ink-primary) !important;
+    font-size: clamp(2.2rem, 6vw, 3.2rem);
+    font-weight: 800;
+    line-height: 1.35;
+    opacity: 1 !important;
+    text-shadow: none !important;
+    filter: none !important;
+}
+
+.hero-tagline {
+    color: var(--ink-secondary) !important;
+    font-size: clamp(1.1rem, 3vw, 1.55rem);
+    font-weight: 700;
+    line-height: 1.55;
+    margin-top: 0.25rem;
+}
+
+.hero-subtitle {
+    color: var(--ink-muted) !important;
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin-top: 0.45rem;
+}
+
+div.stButton > button,
+div.stDownloadButton > button {
+    min-height: 3rem;
+    border-radius: 12px;
+    font-weight: 700;
+    transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+
+div.stButton > button:hover,
+div.stDownloadButton > button:hover {
+    transform: translateY(-1px);
+}
+
+div.stButton > button[kind="primary"] {
+    background-color: var(--accent-rose);
+    border-color: var(--accent-rose);
+}
+
+div.stButton > button[kind="primary"]:hover {
+    background-color: var(--accent-rose-hover);
+    border-color: var(--accent-rose-hover);
+}
+
+div[data-testid="stMetric"] {
+    background-color: #fffafb;
+    border: 1px solid var(--border-soft);
+    border-radius: 14px;
+    padding: 0.85rem 1rem;
+    color: var(--ink-primary) !important;
+}
+
+div[data-testid="stMetric"] label,
+div[data-testid="stMetric"] [data-testid="stMetricLabel"],
+div[data-testid="stMetric"] [data-testid="stMetricLabel"] * {
+    color: var(--ink-secondary) !important;
+    font-weight: 600 !important;
+    opacity: 1 !important;
+}
+
+div[data-testid="stMetric"] [data-testid="stMetricValue"],
+div[data-testid="stMetric"] [data-testid="stMetricValue"] * {
+    color: var(--ink-primary) !important;
+    font-weight: 800 !important;
+    opacity: 1 !important;
+}
+
+@media (max-width: 600px) {
+    .block-container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 0.9rem;
+    }
+
+    .hero {
+        padding: 1.25rem 1rem;
+        border-radius: 0 0 18px 18px;
+    }
+
+    .hero-flower {
+        font-size: 2.2rem;
+    }
+}
+
+/* ---------- Result card ---------- */
+.risk-card {
+    border-radius: 18px;
+    padding: 1.3rem 1.4rem 1rem;
+    margin: 0.4rem 0 0.8rem;
+    border: 2px solid transparent;
+    color: #1f1a1c;
+}
+.risk-card ul { margin: 0.2rem 0 0.6rem 1.1rem; padding: 0; }
+.risk-card li, .risk-card p { font-size: 1.02rem; line-height: 1.6; margin: 0.1rem 0; }
+.risk-label { font-size: clamp(1.8rem, 6vw, 2.4rem); font-weight: 800; line-height: 1.3; }
+.risk-action { font-size: 1.25rem; font-weight: 700; margin: 0.2rem 0 0.8rem; }
+.risk-section-title { font-weight: 700; margin-top: 0.4rem; opacity: 0.85; }
+.risk-high { background: #fee2e2; border-color: #dc2626; }
+.risk-high .risk-label, .risk-high .risk-action { color: #b91c1c; }
+.risk-moderate { background: #ffedd5; border-color: #ea580c; }
+.risk-moderate .risk-label, .risk-moderate .risk-action { color: #c2410c; }
+.risk-low { background: #dcfce7; border-color: #16a34a; }
+.risk-low .risk-label, .risk-low .risk-action { color: #15803d; }
+.risk-unknown { background: #f1f5f9; border-color: #94a3b8; }
+.risk-unknown .risk-label, .risk-unknown .risk-action { color: #475569; }
+.risk-disclaimer {
+    font-size: 0.92rem;
+    color: var(--ink-muted);
+    border-left: 3px solid var(--border-soft);
+    padding: 0.2rem 0 0.2rem 0.7rem;
+    margin-bottom: 0.8rem;
+}
+
+/* Keep Streamlit's Material icon font (the Bangla font rule above would break it). */
+[data-testid="stIconMaterial"],
+span[class*="material-symbols"] {
+    font-family: "Material Symbols Rounded" !important;
+}

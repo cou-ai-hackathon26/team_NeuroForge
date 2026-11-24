@@ -1,0 +1,7 @@
+
+streamlit>=1.50
+pandas>=2.2
+faster-whisper==1.2.1
+av==18.1.0
+google-genai>=1.0
+pytest>=8.0

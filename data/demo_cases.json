@@ -1,0 +1,22 @@
+[
+  {
+    "case": "Synthetic A",
+    "transcript": "আমার গর্ভাবস্থায় রক্তপাত হচ্ছে",
+    "expected": "HIGH"
+  },
+  {
+    "case": "Synthetic B",
+    "transcript": "মাথা ব্যথা এবং চোখে ঝাপসা দেখি",
+    "expected": "HIGH"
+  },
+  {
+    "case": "Synthetic C",
+    "transcript": "মুখ ও হাত ফুলে গেছে",
+    "expected": "MEDIUM"
+  },
+  {
+    "case": "Synthetic D",
+    "transcript": "কোনো সমস্যা নেই",
+    "expected": "INCOMPLETE"
+  }
+]

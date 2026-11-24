@@ -1,0 +1,17 @@
+{
+  "notice": "DEMO ONLY. Not a WHO/DGHS-approved protocol. Requires qualified maternal-health review. Every symptom field produced by the extractor must appear in exactly one tier; the engine refuses to load otherwise.",
+  "red_flags": {
+    "bleeding": {"id": "DEMO-HIGH-01", "reason": "রক্তপাতের কথা জানিয়েছেন।"},
+    "convulsions": {"id": "DEMO-HIGH-02", "reason": "খিঁচুনির কথা জানিয়েছেন।"},
+    "severe_headache": {"id": "DEMO-HIGH-03", "reason": "তীব্র মাথাব্যথার কথা জানিয়েছেন।"},
+    "blurred_vision": {"id": "DEMO-HIGH-04", "reason": "দৃষ্টিতে ঝাপসা বা সমস্যা হওয়ার কথা জানিয়েছেন।"},
+    "reduced_fetal_movement": {"id": "DEMO-HIGH-05", "reason": "শিশুর নড়াচড়া কমে যাওয়ার কথা জানিয়েছেন।"},
+    "severe_abdominal_pain": {"id": "DEMO-HIGH-06", "reason": "তীব্র পেটব্যথার কথা জানিয়েছেন।"},
+    "difficulty_breathing": {"id": "DEMO-HIGH-07", "reason": "শ্বাসকষ্টের কথা জানিয়েছেন।"},
+    "swelling_face_hands": {"id": "DEMO-HIGH-08", "reason": "মুখ বা হাতে ফোলাভাবের কথা জানিয়েছেন।"},
+    "water_breaking": {"id": "DEMO-HIGH-09", "reason": "গর্ভের পানি বের হওয়ার কথা জানিয়েছেন।"}
+  },
+  "moderate_flags": {
+    "fever": {"id": "DEMO-MOD-01", "reason": "জ্বরের কথা জানিয়েছেন।"}
+  }
+}
